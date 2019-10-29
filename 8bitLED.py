@@ -16,5 +16,3 @@ for x in range(248): # lab leader last # is 8, therefore count to 247.
             GPIO.output(pins[-num],GPIO.HIGH)
         x = x // 2 # divide by two and round down
     time.sleep(0.5)
-    for pin in pins: # reset all LEDs
-        GPIO.output(pin, GPIO.LOW)
